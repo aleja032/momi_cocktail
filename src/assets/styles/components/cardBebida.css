@@ -1,0 +1,52 @@
+.card-bebida__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bebida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    background-color: #cf8faa;
+}
+
+.card-bebida__icon {
+    width: 30px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.card-bebida__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: aliceblue;
+}
+
+.card-bebida__description {
+    font-size: 19px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card-bebida__button {
+    padding: 8px 16px;
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
