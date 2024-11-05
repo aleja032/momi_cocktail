@@ -1,0 +1,21 @@
+
+.logo{
+    width: 4rem !important;
+}
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 2.3vh;
+}
+/* .custom-search{
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white !important;
+    border: none;
+
+}
+.input-search{
+    width: 70% !important;
+    outline: none;
+    border: none;
+    font-weight: 500;
+} */

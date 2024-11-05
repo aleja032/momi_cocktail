@@ -1,8 +1,8 @@
-import '../assets/styles/home.css'
+import Header from '../components/Header';
 function Home() {
   return (
-    <div className="bg-home">
-        <h1 className="text-center">Welcome to Ancient Sips</h1>
-    </div>
+    // <div className="prueba">
+      <Header />
+    // </div>
   )
 } export default Home
