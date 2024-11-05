@@ -1,35 +1,62 @@
 import React, { useState } from 'react';
 import heart from '../assets/icons/heart.svg';
-import '../assets/styles/components/cardBebida.css';
+import coctelImage from '../assets/images/coctel.png';
 import Modal from './Modal';
 
 const CardBebida = ({ onOpenModal }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
     const handleOpenModal = () => {
         setIsModalOpen(true);
         onOpenModal();
     };
-  
+
     const handleCloseModal = () => {
         setIsModalOpen(false);
     };
-  
+
     return (
-        <div className='card-bebida__overlay'>
-        <div className="card-bebida">
-            <img src={heart} className="card-bebida__icon" alt="Heart icon" />
-            <div className="card-title">
-                <p>MARGARITA</p>
-                <div className='card-bebida__description'></div>
-                <button className="card-bebida__button" onClick={handleOpenModal}>
-                    mas detalles
-                </button>
+        <div className="d-flex justify-content-center align-items-center vh-100">
+            <div className="card position-relative" style={{ width: '18rem', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+                <img src={coctelImage} className="card-img-top" alt="Bebida" style={{ objectFit: 'cover', height: '100%' }} />
+                
+                <div 
+                    className="position-absolute d-flex justify-content-center align-items-center" 
+                    style={{
+                        top: '10px', 
+                        right: '10px', 
+                        width: '40px', 
+                        height: '40px', 
+                        background: 'linear-gradient(90deg, #D4AF37, #F2E494, #B8860B)', 
+                        borderRadius: '50%', 
+                        cursor: 'pointer'
+                    }}
+                >
+                    <img 
+                        src={heart} 
+                        alt="Heart icon" 
+                        style={{ width: '20px', height: '20px', filter: 'invert(29%) sepia(78%) saturate(7461%) hue-rotate(346deg) brightness(101%) contrast(107%)' }} 
+                    />
+                </div>
+
+                <div className="card-img-overlay d-flex flex-column justify-content-end p-0">
+                    <div className="bg-dark text-center text-white py-2" style={{ opacity: '0.8' }}>
+                        <h5 className="card-title mb-0">Cocktail Rosemary Blue</h5>
+                    </div>
+                    <button 
+                        className="btn btn-warning rounded-pill mx-auto my-2 px-4"
+                        style={{ background: 'linear-gradient(90deg, #D4AF37, #F2E494, #B8860B)', }}
+                        onClick={handleOpenModal}
+                    >
+                        Ver más
+                    </button>
+                </div>
+
+                {isModalOpen && <Modal onClose={handleCloseModal} />}
             </div>
-            {isModalOpen && <Modal onClose={handleCloseModal} />}
-        </div>
         </div>
     );
 };
 
 export default CardBebida;
+
