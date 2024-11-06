@@ -1,8 +1,15 @@
+
 .drinks-container{
     width: 100%;
+    height: 40rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 26rem;
     overflow: auto;
+}
+.drinks-title{
+    font-size: 1.8rem;
+}
+.drinks-paragraph{
+    font-size: 0.9rem;
 }

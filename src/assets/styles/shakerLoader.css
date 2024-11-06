@@ -1,0 +1,18 @@
+.shaker-container {
+    width: 100%; /* Ajusta la altura según tu diseño */
+}
+
+.shaker-image {
+    width: 7rem; /* Ajusta el tamaño del shaker */
+    height: 7rem;
+    animation: shakeY 0.2s infinite ease-in-out; /* Define la animación en el eje Y */
+}
+
+/* Animación de batido en el eje Y */
+@keyframes shakeY {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}

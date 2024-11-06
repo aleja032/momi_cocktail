@@ -6,6 +6,10 @@
     color: white;
     font-size: 2.3vh;
 }
+.navbar-toggler, .custom-toggler{
+    color: white !important;
+    background-color: white;
+}
 /* .custom-search{
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

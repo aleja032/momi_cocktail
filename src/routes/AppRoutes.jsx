@@ -11,7 +11,7 @@ function AppRoutes() {
                 <Route path="/" element= {<Home />} />
                 <Route path="/allDrinks" element= {<Prueba />} />
                 <Route path="/discover" element= {<DiscoverCocktail />} />
-
+                <Route path="/favorites" element= {<Prueba />} />
             </Routes>
         </BrowserRouter>
     );

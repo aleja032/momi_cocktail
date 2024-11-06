@@ -3,11 +3,11 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white !important;
     border: none;
-    width: 18%;
+    width: 14rem;
 }
 .input-search{
     width: 70% !important;
     outline: none;
-    /* border: none; */
+    font-size: 0.9rem;
     font-weight: 500;
 }

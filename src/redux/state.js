@@ -1,9 +1,6 @@
-// import { loadLocalStorage } from "../localStorage/localStorage"; //implementar favoritos
-
 export const initialState = {
-    drinks: [],
-    drinkByName: [],
-    drinkById: [],
+    allDrinks: '',
+    favorites:[],
     status: 'idle', 
     error: null,
 };

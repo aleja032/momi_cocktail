@@ -1,0 +1,15 @@
+.custom-general {
+    background: 
+        url('../icons/bg-final.svg'),
+        linear-gradient(to top left, #FF5F6D 0%, #28222D 50%);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 100%;
+}
+
+@media (max-width: 990px) {
+    .custom-general{
+        height: 100%;
+    }
+} 

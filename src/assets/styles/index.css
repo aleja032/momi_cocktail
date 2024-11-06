@@ -1,13 +1,20 @@
 *{
     font-family: "Playfair Display", serif;
 }
-body {
+/* body {
     background: 
-        /* url('../icons/bg-final.svg'), */
+        url('../icons/bg-final.svg'),
         linear-gradient(to top left, #FF5F6D 0%, #28222D 50%);
     background-repeat: no-repeat;
-    background-size: cover; /* Adjusts the image size to cover the screen */
+    background-size: cover; 
     background-position: center;
-    height: 100vh;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    height: 100%;
+    
 }
+
+@media (max-width: 991px) {
+    body{
+        height: 100%;
+    }
+} */

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Card, Form, Button } from 'react-bootstrap';
-import botImage from '../assets/icons/bot_cute_final.png'; 
+import botImage from '../assets/images/bot_cute_final.png'; 
 import '../assets/styles/customStyles.css'; 
 
 function CocktailPage() {
   return (
     // <div className="custom-background">
-      <Container className="d-flex justify-content-center align-items-center custom-container">
+      <Container className="d-flex justify-content-center align-items-center custom-container py-5">
         <Card className="custom-card text-center">
           <Card.Body>
             <h2>Hola soy Bot!</h2>

@@ -1,12 +1,9 @@
-/* .prueba{
-    border: 1px solid blue ;
-    height: 100% !important;
-    padding-top: 50px;
-    padding-bottom: 40px;
 
-} */
-header{
+.header{
+    /* padding-top: 0.6rem;
+    padding-bottom: 0.8rem; */
     color: white !important;
+    margin-top: 0.5% !important; 
 }
 .header-title {
     background: linear-gradient(90deg, #D4AF37 0%, #F2E494 50%, #B8860B 100%);
@@ -24,7 +21,6 @@ header{
 .button-gradient {
     background: linear-gradient(90deg, #D4AF37 0%, #F2E494 50%, #B8860B 100%);
     color: black; /* Darker color for text */
-    /* padding: 10px 20px; */
     font-size: 2.3vh;
     font-weight: 500;
     border: none;
@@ -53,4 +49,9 @@ header{
 
 .header-glass{
     width: 100%;
+}
+@media (max-width: 1148px) {
+    header{
+        /* margin-top: 3.5% !important; */
+    }
 }
