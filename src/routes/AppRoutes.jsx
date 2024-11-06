@@ -1,4 +1,3 @@
-// src/routes/AppRoutes.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BarNavigation from '../components/BarNavigation';
@@ -12,7 +11,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/DiscoverCocktail" element={<DiscoverCocktail />} />
-        {/* Puedes agregar más rutas aquí si las necesitas */}
+       
       </Routes>
     </Router>
   );
