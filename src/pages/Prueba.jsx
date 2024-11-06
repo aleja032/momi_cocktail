@@ -3,6 +3,7 @@ function Prueba(){
     return(
         <>
             <AllDrinks />
+            
         </>
     );
 }; export default Prueba

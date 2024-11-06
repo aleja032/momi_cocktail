@@ -3,9 +3,10 @@ import heart from '../assets/icons/heart.svg';
 import coctelImage from '../assets/images/coctel.png';
 import Modal from './Modal';
 
-const CardBebida = ({ onOpenModal }) => {
+const CardBebida = ({ drink }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    console.log(drink);
     const handleOpenModal = () => {
         setIsModalOpen(true);
         onOpenModal();
@@ -16,9 +17,9 @@ const CardBebida = ({ onOpenModal }) => {
     };
 
     return (
-        <div className="d-flex justify-content-center align-items-center vh-100">
-            <div className="card position-relative" style={{ width: '18rem', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
-                <img src={coctelImage} className="card-img-top" alt="Bebida" style={{ objectFit: 'cover', height: '100%' }} />
+        <div className="d-flex">
+            <div className="card position-relative" style={{ width: '12rem', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+                <img src={drink.strDrinkThumb} className="card-img-top" alt="Bebida" style={{ objectFit: 'cover', height: '100%' }} />
                 
                 <div 
                     className="position-absolute d-flex justify-content-center align-items-center" 
@@ -41,7 +42,7 @@ const CardBebida = ({ onOpenModal }) => {
 
                 <div className="card-img-overlay d-flex flex-column justify-content-end p-0">
                     <div className="bg-dark text-center text-white py-2" style={{ opacity: '0.8' }}>
-                        <h5 className="card-title mb-0">Cocktail Rosemary Blue</h5>
+                        <h5 className="card-title mb-0">{drink.strDrink}</h5>
                     </div>
                     <button 
                         className="btn btn-warning rounded-pill mx-auto my-2 px-4"

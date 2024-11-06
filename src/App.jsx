@@ -5,16 +5,10 @@ import AppRoutes from './routes/AppRoutes.jsx';
 import CardBebida from './components/CardBebida';
 
 function App() {
-  
-  const handleOpenModal = () => {
-
-    console.log("Modal abierto desde el hijo");
-};
-
   return (
     <>
       <AppRoutes />
-       <CardBebida onOpenModal={handleOpenModal} />
+       {/* <CardBebida onOpenModal={handleOpenModal} /> */}
     </>
   )
 }
