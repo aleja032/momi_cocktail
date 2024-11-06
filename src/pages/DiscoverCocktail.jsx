@@ -16,7 +16,7 @@ function CocktailPage() {
             <div className="content-container d-flex align-items-center justify-content-around">
               
               <Form.Group className="select-group">
-                <Form.Label>Te consideras?</Form.Label>
+                <Form.Label>¿Te consideras una persona más aventurera o relajada?</Form.Label>
                 <Form.Select aria-label="Seleccionar">
                   <option>Seleccionar</option>
                   <option value="1">Aventurero</option>
