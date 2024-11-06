@@ -5,7 +5,7 @@ import '../assets/styles/customStyles.css';
 
 function CocktailPage() {
   return (
-    <div className="custom-background">
+    // <div className="custom-background">
       <Container className="d-flex justify-content-center align-items-center custom-container">
         <Card className="custom-card text-center">
           <Card.Body>
@@ -51,7 +51,7 @@ function CocktailPage() {
           </Card.Body>
         </Card>
       </Container>
-    </div>
+    // </div>
   );
 }
 

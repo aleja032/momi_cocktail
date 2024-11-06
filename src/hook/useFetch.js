@@ -16,7 +16,7 @@ function useFetch(url) {
 
             const result = await response.json();
             setData(result); // Carga todo el resultado de la API de cócteles
-
+            console.log("datos: ",result);
         } catch (err) {
             setError(err.message);
         } finally {

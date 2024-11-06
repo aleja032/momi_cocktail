@@ -21,14 +21,14 @@ function BarNavigation() {
                         <Link to="/" className="nav-link  pe-5">Home</Link>
                         <Link to="/allDrinks" className="nav-link ms-2 pe-5 text-white ">All Drinks</Link> 
                         <Link to="" className="nav-link  pe-5 text-white ">My Favorites</Link>
-                        <Link to="" className="nav-link pe-5 text-white ">Discover your Drink</Link>
+                        <Link to="/discover" className="nav-link pe-5 text-white ">Discover your Drink</Link>
 
                     </div>
                     {/* <div className="py-2 mx-4 mx-0  d-flex justify-content-center align-items-center custom-search ">
                         <input type="text" placeholder='Search' className='border-0 input-search' />
                         <img src={search} alt="Search" className='' />
                     </div> */}
-                    <Search />
+                    {/* <Search /> */}
                 </div>
             </div>
         </nav>
