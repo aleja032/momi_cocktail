@@ -1,27 +1,40 @@
+import React from 'react';
+import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import search from '../assets/icons/search.svg';
+
 function BarNavigation() {
-    return (
-        <nav className="navbar navbar-expand-lg px-0 pt-5 px-lg-5 ">
-            <div className="container-fluid">
-                <Link to="/" className={`navbar-brand d-flex align-items-end mx-0 mx-lg-5 px-3 pe-5 `}>
-                    <h6 className='ms-2 mb-0 text-white '>
-                        Ancient Sips
-                    </h6>
-                </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon custom-toggler"></span>
-                </button>
-                <div className="collapse navbar-collapse border " id="navbarNavAltMarkup">
-                    <div className="navbar-nav ms-auto text-center p-3 p-lg-0">
-                        <Link to="/" className="nav-link ms-2 pe-5 text-white ">Home</Link>
-                    </div>
-                    <div className="py-2 mx-4 mx-0  d-flex justify-content-center align-items-center custom-search  ">
-                        <input type="text" placeholder='Search' className='border-0 input-search' />
-                        <img src={search} alt="Search" className='' />
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
-} export default BarNavigation
+  return (
+    <Navbar expand="lg" style={{ backgroundColor: '#2E2733', color: '#fff' }}>
+      <Container>
+        <Navbar.Brand as={Link} to="/" style={{ color: '#fff', fontWeight: 'bold' }}>
+          <img src="path/to/logo.png" alt="logo" style={{ width: '30px', marginRight: '10px' }} />
+          Ancient Sips
+        </Navbar.Brand>
+        
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/" style={{ color: '#fff' }}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/favorites" style={{ color: '#fff' }}>My favorites</Nav.Link>
+            <Nav.Link as={Link} to="/all-drinks" style={{ color: '#fff' }}>All Drinks</Nav.Link>
+            <Nav.Link as={Link} to="/DiscoverCocktail" style={{ color: '#fff' }}>Discover your drink</Nav.Link>
+          </Nav>
+          <Form className="d-flex">
+            <FormControl
+              type="search"
+              placeholder="Buscar"
+              className="me-2"
+              aria-label="Buscar"
+              style={{ borderRadius: '20px' }}
+            />
+            <Button variant="outline-light">
+              🔍
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default BarNavigation;
