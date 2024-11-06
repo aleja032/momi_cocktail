@@ -12,6 +12,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/DiscoverCocktail" element={<DiscoverCocktail />} />
        
+        
       </Routes>
     </Router>
   );
