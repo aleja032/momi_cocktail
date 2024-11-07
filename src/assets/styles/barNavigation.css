@@ -10,16 +10,14 @@
     color: white !important;
     background-color: white;
 }
-/* .custom-search{
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: white !important;
-    border: none;
-
+.animated-link {
+    position: relative !important;
+    color: white !important;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
-.input-search{
-    width: 70% !important;
-    outline: none;
-    border: none;
-    font-weight: 500;
-} */
+
+.animated-link:hover {
+    transform: scale(1.1); 
+}

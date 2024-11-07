@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DrinkService from '../services/DrinkService';
-import '../assets/styles/components/modal.css';
+import '../assets/styles/modal.css';
 
 const Modal = ({ onClose, data, idDrink }) => {
   const [drink, setDrink] = useState(null);

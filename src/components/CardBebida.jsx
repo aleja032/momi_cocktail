@@ -4,7 +4,7 @@ import { addFavorites } from '../redux/slice';
 import heart from '../assets/icons/heart.svg';
 import heartFull from '../assets/icons/heartFull.svg';
 import Modal from './Modal';
-import '../assets/styles/components/cardBebida.css';
+import '../assets/styles/cardBebida.css';
 
 const CardBebida = ({ drink, isFavorite }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);

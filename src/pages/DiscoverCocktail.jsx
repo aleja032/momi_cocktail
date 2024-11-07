@@ -31,7 +31,7 @@ function DiscoverCocktail() {
     setShowBotImage(true);
   }
   return (
-    <Container className="d-flex justify-content-center align-items-center custom-container py-5 border ">
+    <Container className="d-flex justify-content-center align-items-center custom-container py-5">
       <Card className="custom-card text-center">
         <Card.Body>
         <h2>Hi, I'm Bot!</h2>
@@ -55,7 +55,7 @@ function DiscoverCocktail() {
               </Form.Select>
             </Form.Group>
 
-            <div className="border py-4 px-2 ">
+            <div className="py-4 px-2 ">
               <div className="bot-image-container">
 
                 {showBotImage ? (
