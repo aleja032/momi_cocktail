@@ -12,18 +12,18 @@ class DrinkService {
       const url = param ? `${this.searchUrl}${param}` : this.baseUrl;
       console.log("AAAA URL:", param ? `${this.searchUrl}${param}` : this.baseUrl);
 
-      try {
-        console.log("Final URL:", url);
-        const response = await fetchInterceptor(url);
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }
-        return response.json(); 
-      } catch (error) {
-        console.error("API Error:", error);
-        throw error; 
+    try {
+      console.log("Final URL:", url);
+      const response = await fetchInterceptor(url);
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
       }
+      return response.json();
+    } catch (error) {
+      console.error("API Error:", error);
+      throw error;
     }
+  }
 
     async getDescription (param = '') {
       try {
@@ -51,5 +51,3 @@ class DrinkService {
         throw error; 
       }
     }
-
-}  export default new DrinkService();

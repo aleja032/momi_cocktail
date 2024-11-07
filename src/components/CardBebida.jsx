@@ -15,7 +15,6 @@ const CardBebida = ({ drink, isFavorite }) => {
     };
     const handleOpenModal = () => {
         setIsModalOpen(true);
-        onOpenModal();
     };
     const handleCloseModal = () => {
         setIsModalOpen(false);
@@ -45,7 +44,7 @@ const CardBebida = ({ drink, isFavorite }) => {
                   
                 </div>
 
-                {isModalOpen && <Modal onClose={handleCloseModal} />}
+                {(isModalOpen) && (<Modal onClose={handleCloseModal} data = {drink}/>)}
             </div>
         </div>
     );
