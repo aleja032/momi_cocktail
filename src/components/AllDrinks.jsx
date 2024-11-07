@@ -31,8 +31,7 @@ function AllDrinks({ section }) {
                 {section === '/allDrinks' ? (
                     <>
                         <p className="text-white drinks-paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Explore our selection of handcrafted cocktails: fresh, exotic and vibrant flavors for every occasion.
                         </p>
                         <Search searcher={searcher} />
                     </>

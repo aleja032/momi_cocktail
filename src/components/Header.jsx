@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import drink from '../assets/images/glass.png';
+import drink from '../assets/images/glass.webp';
 import '../assets/styles/header.css';
 function Header() {
     return (

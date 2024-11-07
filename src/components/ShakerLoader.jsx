@@ -1,5 +1,5 @@
 import React from 'react';
-import shaker from '../assets/images/shaker.png';
+import shaker from '../assets/images/shaker.webp';
 import '../assets/styles/shakerLoader.css';
 
 function ShakerLoader() {

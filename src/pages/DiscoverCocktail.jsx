@@ -3,7 +3,7 @@ import { fetchRandom } from '../redux/thunkDrinks';
 import { Container, Card, Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import CardBebida from '../components/CardBebida.jsx';
-import botImage from '../assets/images/bot_cute_final.png';
+import botImage from '../assets/images/bot_cute_final.webp';
 import '../assets/styles/customStyles.css';
 
 function DiscoverCocktail() {
