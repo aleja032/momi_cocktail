@@ -51,3 +51,4 @@ class DrinkService {
         throw error; 
       }
     }
+  }export default new DrinkService();
