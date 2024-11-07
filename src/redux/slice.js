@@ -1,33 +1,37 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './state.js';
-import { fetchAllDrinks }  from './thunkDrinks.js';
-import { act } from 'react';
-// import { saveLocalStorage } from '../localStorage/localStorage.js';
+import { fetchAllDrinks, fetchRandom } from './thunkDrinks.js';
 
 const drinks = createSlice({
-    name: 'drinks',
-    initialState,
-    reducers: {
-        addFavorites: (state, action) => {
-            state.favorites.push(action.payload);
-        }
+  name: 'drinks',
+  initialState,
+  reducers: {
+    addFavorites: (state, action) => {
+      state.favorites.push(action.payload);
     },
-    extraReducers: (builder) => {
-        builder
-        .addCase(fetchAllDrinks.pending, (state) => {
-            state.status = 'loading';
-        })
-        .addCase(fetchAllDrinks.fulfilled, (state, action) => {
-            state.status = 'succeeded'; 
-            console.log(action.payload);
-            state.allDrinks = action.payload; 
-        })
-        .addCase(fetchAllDrinks.rejected, (state, action) => {
-            state.status = 'failed';
-            state.error = action.error.message; 
-        })
-
-    }
+    addDrink: (state, action) => {
+        state.discoverDrink.push({
+          personType: action.payload.personType,
+          mood: action.payload.mood,
+          drink: action.payload.drink,  
+        });
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchAllDrinks.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchAllDrinks.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.allDrinks = action.payload;
+      })
+      .addCase(fetchAllDrinks.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
+      })
+  },
 });
-export const { addFavorites } = drinks.actions;
+
+export const { addFavorites, addDrink } = drinks.actions;
 export default drinks.reducer;

@@ -4,7 +4,8 @@ class DrinkService {
     constructor() {
       this.baseUrl = import.meta.env.VITE_ALLDRINKS;
       this.searchUrl = import.meta.env.VITE_SEARCHBYNAME;
-      this.descriptionUrl = import.meta.env.VITE_DESCRIPTIONCOCKTAIL
+      this.descriptionUrl = import.meta.env.VITE_DESCRIPTIONCOCKTAIL;
+      this.randomUrl = import.meta.env.VITE_RANDOMDRINK;
     }
   
     async getDrinks(param = '') {
@@ -30,6 +31,20 @@ class DrinkService {
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
+        return response.json(); 
+      } catch (error) {
+        console.error("API Error:", error);
+        throw error; 
+      }
+    }
+    
+    async getRandomDrink (){
+      try {
+        const response = await fetchInterceptor(this.randomUrl);
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+        console.log(response);
         return response.json(); 
       } catch (error) {
         console.error("API Error:", error);
