@@ -47,7 +47,7 @@ function DiscoverCocktail() {
                 onChange={(e) => setPersonType(e.target.value)}
                 disabled={!showBotton} 
               >
-              <option>Select</option>
+              <option value="" >Select</option>
               <option value="Adventurer">Adventurer</option>
               <option value="Relaxed">Relaxed</option>
               <option value="Creative">Creative</option>
@@ -100,7 +100,7 @@ function DiscoverCocktail() {
                 onChange={(e) => setMood(e.target.value)}
                 disabled={!showBotton}
               >
-                <option>Select</option>
+                <option value="">Select</option>
                 <option value="Happy">Happy</option>
                 <option value="Thoughtful">Thoughtful</option>
                 <option value="Calm">Calm</option>

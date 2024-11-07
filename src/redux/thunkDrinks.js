@@ -20,16 +20,3 @@ export const fetchRandom = createAsyncThunk(
     }
 );
 
-export const fetchDescription = createAsyncThunk(
-  "drinks/fetchDescription",
-  async (param, { rejectWithValue }) => {
-    try {
-      // Esperamos la respuesta de la API
-      const data = await DrinkService.getDescription(param);
-      return data;
-    } catch (error) {
-      // En caso de error, se retorna el error con rejectWithValue
-      return rejectWithValue(error.message);
-    }
-  }
-);

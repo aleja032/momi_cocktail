@@ -18,6 +18,8 @@ class DrinkService {
       if (!response.ok) {
         throw new Error(`Error: ${response.status} ${response.statusText}`);
       }
+      console.log("respuesta Busca",response);
+
       return response.json();
     } catch (error) {
       console.error("API Error:", error);
@@ -26,11 +28,14 @@ class DrinkService {
   }
 
     async getDescription (param = '') {
+      const url = `${this.descriptionUrl}${param}`;
+      console.log(url);
       try {
-        const response = await fetchInterceptor(descriptionUrl+param);
+        const response = await fetchInterceptor(url);
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
+        console.log("respuesta",response);
         return response.json(); 
       } catch (error) {
         console.error("API Error:", error);
