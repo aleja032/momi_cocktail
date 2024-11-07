@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addFavorites } from '../redux/slice';
 import heart from '../assets/icons/heart.svg';
 import heartFull from '../assets/icons/heartFull.svg';
-import Modal from './Modal';
+import Modal from './Modal.jsx';
 import '../assets/styles/cardBebida.css';
 
 const CardBebida = ({ drink, isFavorite }) => {
