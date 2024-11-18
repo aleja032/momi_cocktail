@@ -70,7 +70,9 @@
   .custom-button:hover {
     background: linear-gradient(90deg, #D4AF37 0%, #F2E494 50%, #B8860B 100%);
   }
-  
+  .contain-card{
+    /* height: 30rem; */
+  }
   @media (max-width: 768px) {
     .custom-card {
       padding: 40px 20px;
@@ -87,12 +89,13 @@
     }
   
     .bot-image-container {
-      width: 120px;
-      height: 120px;
+      width: 230px;
+      height: 250px;
+      border: none;
     }
   
     .bot-image {
-      width: 100px;
+      width: 160px;
     }
   }
   
