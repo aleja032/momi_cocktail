@@ -20,8 +20,8 @@ function BarNavigation() {
                     <div className="navbar-nav ms-auto text-center">
                         <Link to="/" className="nav-link  pe-lg-5 ">Home</Link>
                         <Link to="/allDrinks" className="nav-link  pe-lg-5  text-white ">All Drinks</Link> 
-                        <Link to="/favorites" className="nav-link  pe-lg-5  text-white ">My Favorites</Link>
-                        <Link to="/discover" className="nav-link me-5 text-white animated-background"> Discover your Drink </Link>
+                        <Link to="/favorites" className="nav-link pe-lg-5  text-white ">My Favorites</Link>
+                        <Link to="/discover" className="nav-link me-lg-5 text-white animated-background"> Discover your Drink </Link>
 
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import CardBebida from './components/CardBebida';
 function App() {
 
   return (
-    <div className="custom-general">
+    <div className="custom-general vh-100 overflow-auto">
       <AppRoutes />
     </div>
   )

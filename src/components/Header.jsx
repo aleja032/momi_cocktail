@@ -3,7 +3,7 @@ import drink from '../assets/images/glass.webp';
 import '../assets/styles/header.css';
 function Header() {
     return (
-        <div className="header py-4 ">
+        <div className="header py-3 ">
             <header className="row gx-0 gap-3 py-lg-3 my-3 justify-content-center">
                 <div className="col-12 col-md-12 col-lg-5 d-flex flex-column justify-content-center align-items-center">
                     <h1 className="mb-lg-4 text-center header-title">COCKTAIL SIPS</h1>

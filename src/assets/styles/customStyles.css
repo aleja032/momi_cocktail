@@ -1,6 +1,6 @@
 .custom-background {
     background: linear-gradient(135deg, #2E2733 0%, #4C2238 100%);
-    min-height: 100vh;
+    min-height: 900vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    padding: 60px 30px;
+    padding: 15px 50px;
     position: relative;
     text-align: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@
   .content-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     flex-wrap: wrap;
   }
   
@@ -38,19 +38,21 @@
   }
   
   .bot-image-container {
-    background-color: #403B46;
     border-radius: 50%;
-    padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
+    align-items: end;
+    width: 210px;
+    height: 210px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #F7ECDF;
   }
-  
+  .paragraph{
+    font-size: 1.3rem;
+  }
+ 
   .bot-image {
-    width: 120px;
+    width: 9rem;
   }
   
   .custom-button {

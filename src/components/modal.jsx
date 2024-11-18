@@ -33,23 +33,23 @@ const Modal = ({ onClose, data }) => {
                     </div>
                     <div className="modal__content">
                         {drink.strCategory && (
-                            <p className="modal__level">Categoría: {drink.strCategory}</p>
+                            <p className="modal__level">Category: {drink.strCategory}</p>
                         )}
                         {drink.strAlcoholic && (
-                            <p className="modal__level">Tipo: {drink.strAlcoholic}</p>
+                            <p className="modal__level">Type: {drink.strAlcoholic}</p>
                         )}
                         {drink.strGlass && (
-                            <p className="modal__level">Vaso: {drink.strGlass}</p>
+                            <p className="modal__level">Glass: {drink.strGlass}</p>
                         )}
                         {drink.strInstructionsES && (
                             <div className="modal__info">
-                                <h4>Instrucciones:</h4>
-                                <p>{drink.strInstructionsES}</p>
+                                <h4>Instructions:</h4>
+                                <p>{drink.strInstructions}</p>
                             </div>
                         )}
                         {drink.strIngredient1 || drink.strIngredient2 || drink.strIngredient3 || drink.strIngredient4 || drink.strIngredient5 || drink.strIngredient6 || drink.strIngredient7 ? (
                             <div className="modal__info">
-                                <h4>Ingredientes:</h4>
+                                <h4>Ingredients:</h4>
                                 <ul>
                                     {drink.strIngredient1 && <li>{drink.strIngredient1} - {drink.strMeasure1}</li>}
                                     {drink.strIngredient2 && <li>{drink.strIngredient2} - {drink.strMeasure2}</li>}
@@ -73,7 +73,7 @@ const Modal = ({ onClose, data }) => {
                     )}
                     <div className="modal__footer">
                         <button onClick={handleClose} className="modal__button modal__button--close">
-                            Cerrar
+                            Close
                         </button>
                     </div>
                 </div>

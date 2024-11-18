@@ -5,11 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 @media (max-width: 990px) {
-    .custom-general{
+    /* .custom-general{
         height: 100%;
-    }
+    } */
 } 
